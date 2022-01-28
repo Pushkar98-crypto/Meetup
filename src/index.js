@@ -3,13 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import {BrowserRouter} from 'react-router-dom';
-
+import  {FavrouiteContentProviders} from './store/Favourite-context';
 
 ReactDOM.render(
   <React.StrictMode> 
+    <FavrouiteContentProviders>
     <BrowserRouter>
     <App />
     </BrowserRouter>
+    </FavrouiteContentProviders>
   </React.StrictMode>,
   document.getElementById('root')
 );
